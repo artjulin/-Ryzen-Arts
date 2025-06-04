@@ -1,5 +1,107 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Loja de Materiais de Desenhos</title>
+    <link rel="stylesheet" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Suporte</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff; /* Cor de fundo suave */
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #ffffff; /* Fundo do formulário */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #007acc; /* Cor do título */
+      margin-bottom: 20px;
+    }
+
+    p {
+      text-align: center;
+      color: #333;
+      margin-bottom: 40px;
+      font-size: 1.1em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      padding: 12px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+      transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+
+    button {
+      padding: 15px;
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #005f99;
+    }
+
+    /* Mensagem de sucesso ou erro */
+    .message {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1.2em;
+    }
+
+    .success {
+      color: green;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
     <h1>Suporte</h1>
-    <p> Precisa de Suporte?! Preencha o formulário abaixo e entraremos em contato.</p>
+    <p>Precisa de Suporte?! Preencha o formulário abaixo e entraremos em contato.</p>
     <form id="contactForm" onsubmit="return validateForm()">
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" required />
@@ -14,3 +116,6 @@
     </form>
     <div class="message" id="formMessage"></div>
   </div>
+
+  <script>
+  
